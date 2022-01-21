@@ -1,0 +1,3 @@
+# Mystiko.Network Static Files Repo
+
+More document coming soon...
