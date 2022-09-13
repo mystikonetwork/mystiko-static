@@ -57,6 +57,47 @@
       }
     },
     {
+      "name": "randomPublicKeyXSign",
+      "public": true,
+      "type": "bool"
+    },
+    {
+      "name": "randomPublicKeyY",
+      "public": true,
+      "type": "field"
+    },
+    {
+      "name": "auditorPublicKeyXSigns",
+      "public": true,
+      "type": "array",
+      "components": {
+        "size": 5,
+        "type": "bool"
+      }
+    },
+    {
+      "name": "auditorPublicKeyYs",
+      "public": true,
+      "type": "array",
+      "components": {
+        "size": 5,
+        "type": "field"
+      }
+    },
+    {
+      "name": "encryptedCommitmentShares",
+      "public": true,
+      "type": "array",
+      "components": {
+        "size": 2,
+        "type": "array",
+        "components": {
+          "size": 5,
+          "type": "field"
+        }
+      }
+    },
+    {
       "name": "inCommitments",
       "public": false,
       "type": "array",
@@ -189,7 +230,57 @@
         "size": 1,
         "type": "field"
       }
+    },
+    {
+      "name": "randomPublicKeyX",
+      "public": false,
+      "type": "field"
+    },
+    {
+      "name": "auditorPublicKeyXs",
+      "public": false,
+      "type": "array",
+      "components": {
+        "size": 5,
+        "type": "field"
+      }
+    },
+    {
+      "name": "randomSecretKey",
+      "public": false,
+      "type": "field"
+    },
+    {
+      "name": "coefficients",
+      "public": false,
+      "type": "array",
+      "components": {
+        "size": 2,
+        "type": "array",
+        "components": {
+          "size": 3,
+          "type": "field"
+        }
+      }
+    },
+    {
+      "name": "commitmentShares",
+      "public": false,
+      "type": "array",
+      "components": {
+        "size": 2,
+        "type": "array",
+        "components": {
+          "size": 5,
+          "type": "field"
+        }
+      }
     }
   ],
-  "outputs": []
+  "output": {
+    "type": "tuple",
+    "components": {
+      "elements": []
+    }
+  }
 }
